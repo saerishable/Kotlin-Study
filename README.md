@@ -47,13 +47,14 @@
 
 #### 3주차
 [Chapter 5] Programming with lambdas <br>
-[Chapter 6] Working with collections and sequences <br>
-[Chapter 7] Working with nullable values
+[Chapter 6] The Kotlin type system <br>
+[Chapter 7] Operator overloading and other conventions
 
 #### 4주차
-[Chapter 8] Basic types, collections, and arrays <br>
-[Chapter 9] Operator overloading and other conventions <br>
-[Chapter 10] Higher-order functions: lambdas as parameters and return values
+[Chapter 8] Higher-order functions: lambdas as parameters and return values <br>
+[Chapter 9] Generics <br>
+[Chapter 10] Annotations and reflection 
+[Chapter 11] DSL construction 
 
 
 <br></br>
