@@ -18,7 +18,7 @@
 
 <tr align="center">
 <td><img src="https://avatars.githubusercontent.com/u/106756920?v=4" style="width:90%;"></td>
-<td><img src="https://avatars.githubusercontent.com/u/151334450?v=4" style="width:95%;"></td>
+<td><img src="https://avatars.githubusercontent.com/u/145087501?v=4" style="width:95%;"></td>
 <td><img src="https://avatars.githubusercontent.com/u/96974725?v=4" style="width:95%;"></td>
 <td><img src="https://avatars.githubusercontent.com/u/162447481?v=4" style="width:95%;"></td>
 </tr>
@@ -26,7 +26,7 @@
 
 <tr align="center">
 <td><a href="https://github.com/saerishable">새연</td>
-<td><a href="https://github.com/">준희</td>
+<td><a href="https://github.com/kjuni1914">준희</td>
 <td><a href="https://github.com/elaus00">지우</td>
 <td><a href="https://github.com/jihwannnn">지환</td>
 </tr>
