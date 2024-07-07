@@ -53,7 +53,7 @@
 #### 4주차
 [Chapter 8] Higher-order functions: lambdas as parameters and return values <br>
 [Chapter 9] Generics <br>
-[Chapter 10] Annotations and reflection 
+[Chapter 10] Annotations and reflection <br>
 [Chapter 11] DSL construction 
 
 
