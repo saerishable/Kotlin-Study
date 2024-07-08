@@ -1,0 +1,4 @@
+package EnumAndWhen
+
+interface Expression {
+}
