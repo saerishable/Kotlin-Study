@@ -8,3 +8,8 @@ fun recognize(c: Char) = when (c) {
     in 'a'..'z', in 'A'..'Z' -> "It is a letter"
     else -> "I don't know"
 }
+
+fun main() {
+    println("Kotlin" in "Java".."Scala")
+    println("Kotlin" in setOf("Java", "Scala"))
+}
