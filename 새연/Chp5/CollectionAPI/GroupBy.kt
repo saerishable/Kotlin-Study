@@ -1,0 +1,1 @@
+val people = listOf(Person("saeyeon", 23), Person("cherry", 5))
