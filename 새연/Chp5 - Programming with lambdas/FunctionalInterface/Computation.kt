@@ -29,10 +29,16 @@ fun handleComputationId(id: String) {
 }
 
 fun main() {
+    var computation: Computation ?= null
+
+    if (computation != null) {
+        computation.postponeComputation(1000) { println(42) }
+    }
     postponeComputation(1000, object : Runnable {
         override fun run() {
             println(42)
         }
-
     })
+
+
 }
