@@ -8,7 +8,7 @@ fun alphabet(): String {
     return result.toString()
 }
 
-fun alphabetWith(): String{
+fun alphabetWith(): String {
     val sb = StringBuilder()
 
     return with(sb) {
