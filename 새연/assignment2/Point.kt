@@ -1,3 +1,5 @@
+package com.example.assignment.assignment2
+
 import android.util.Log
 
 open class Point(open var x: Int, open var y: Int) {
@@ -12,7 +14,6 @@ open class Point(open var x: Int, open var y: Int) {
 }
 
 class ColorPoint(x: Int, y: Int, var color: String) : Point(x, y) {
-
     override var y: Int
         get() = super.y
         set(value) {

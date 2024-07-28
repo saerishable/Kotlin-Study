@@ -1,4 +1,4 @@
-package com.example.assignment
+package com.example.assignment.assignment2
 
 class Product(val name: String, val price: Double)
 
@@ -34,11 +34,11 @@ fun main() {
     cart.addProduct(product4)
     cart.addProduct(product5)
     cart.addProduct(product6)
-    println(cart.calculateTotalPrice()) // Should print total price of all products
+    println(cart.calculateTotalPrice())
 
     cart.removeProduct("Jean")
-    println(cart.calculateTotalPrice()) // Should print total price after removing "Jean"
+    println(cart.calculateTotalPrice())
 
     cart.removeProduct("Shoes")
-    println(cart.calculateTotalPrice()) // Should print total price after removing "Shoes"
+    println(cart.calculateTotalPrice()) 
 }

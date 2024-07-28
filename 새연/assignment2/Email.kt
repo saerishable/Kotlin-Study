@@ -1,4 +1,4 @@
-package com.example.assignment
+package com.example.assignment.assignment2
 
 fun sendEmail1(address: String?) {
     val emailRegex = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$".toRegex()

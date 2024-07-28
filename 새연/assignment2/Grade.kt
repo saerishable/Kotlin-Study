@@ -1,4 +1,4 @@
-package com.example.assignment
+package com.example.assignment.assignment2
 
 import android.util.Log
 

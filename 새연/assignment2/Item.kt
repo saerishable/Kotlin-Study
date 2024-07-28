@@ -1,4 +1,4 @@
-package com.example.assignment
+package com.example.assignment.assignment2
 
 import kotlin.random.Random
 
@@ -47,12 +47,9 @@ fun main() {
 
     // question 6
     val str = expensiveItems.run {
-        // Sort the list based on price
         sortedBy { it.price }
-        // Return the string representation of the sorted list
         joinToString(separator = "\n") { it.toString() }
     }.also {
-        // Print the list contents with capital letters
         println(it.uppercase())
     }
 
