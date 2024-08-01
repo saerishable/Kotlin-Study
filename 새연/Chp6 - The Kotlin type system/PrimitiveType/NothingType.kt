@@ -5,7 +5,6 @@ fun fail(message: String): Nothing {
 }
 
 fun main() {
-    val company = Company(null)
     val address = company.address ?: fail("No address")
     println(address.city)
 
