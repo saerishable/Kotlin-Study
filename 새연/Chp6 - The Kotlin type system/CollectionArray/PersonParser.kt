@@ -6,3 +6,10 @@ class PersonParser : DataParser<Person> {
         TODO("Not yet implemented")
     }
 }
+
+fun main() {
+    val i = 3.toChar()
+    var any: Any? = null
+
+    val test = any as java.lang.Object
+}
