@@ -1,4 +1,6 @@
-package `Overloading arithmetic operators`
+package `Overloading arithmetic operators`.CollectionRange
+
+import `Overloading arithmetic operators`.Arithmetic.Point
 
 data class Rectangle(val upperLeft: Point, val lowerRight: Point)
 

@@ -1,4 +1,4 @@
-package `Overloading arithmetic operators`
+package `Overloading arithmetic operators`.CollectionRange
 
 data class MutablePoint(var x: Int, var y: Int)
 

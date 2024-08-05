@@ -1,4 +1,4 @@
-package `Overloading arithmetic operators`
+package `Overloading arithmetic operators`.Arithmetic
 
 import java.math.BigDecimal
 

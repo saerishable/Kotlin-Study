@@ -1,4 +1,4 @@
-package `Overloading arithmetic operators`
+package `Overloading arithmetic operators`.Arithmetic
 
 operator fun <T> MutableCollection<T>.plusAssign(element: T) {
     this.add(element)

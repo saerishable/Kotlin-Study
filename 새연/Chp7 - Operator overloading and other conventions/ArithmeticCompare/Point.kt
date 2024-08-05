@@ -1,4 +1,4 @@
-package `Overloading arithmetic operators`
+package `Overloading arithmetic operators`.Arithmetic
 
 data class Point (val x: Int, val y: Int) {
     operator fun plus(other: Point): Point {

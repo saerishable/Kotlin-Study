@@ -1,4 +1,6 @@
-package `Overloading arithmetic operators`
+package `Overloading arithmetic operators`.CollectionRange
+
+import `Overloading arithmetic operators`.Arithmetic.Point
 
 operator fun Point.get(index: Int): Int {
     return when (index) {

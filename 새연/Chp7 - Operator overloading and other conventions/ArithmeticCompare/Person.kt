@@ -1,4 +1,4 @@
-package `Overloading arithmetic operators`
+package `Overloading arithmetic operators`.ArithmeticCompare
 
 class Person (val firstName: String, val lastName: String) : Comparable<Person> {
     override fun compareTo(other: Person): Int {
