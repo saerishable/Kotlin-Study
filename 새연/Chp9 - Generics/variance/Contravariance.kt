@@ -1,0 +1,4 @@
+package variance
+
+class Contravariance {
+}

@@ -1,0 +1,4 @@
+package GenericTypeParam
+
+class NotNullableType {
+}

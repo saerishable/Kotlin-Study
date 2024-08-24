@@ -1,0 +1,4 @@
+package delegatedProperty
+
+class PersonInfo {
+}

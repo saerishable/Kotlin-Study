@@ -1,7 +1,6 @@
-package DestructingDeclaration
+package destructingDeclaration
 
 import java.beans.PropertyChangeListener
-import java.util.EventListener
 
 open class PropetyChangeAware {
     protected val changeSupport = PropetyChangeSupport(this)

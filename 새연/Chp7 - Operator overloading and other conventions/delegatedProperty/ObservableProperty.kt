@@ -1,11 +1,15 @@
-package DestructingDeclaration
+package destructingDeclaration
+
+import kotlin.reflect.KProperty
 
 class ObservableProperty(val propName: String, var propValue: Int, val changeSupport: PropetyChangeSupport) {
-    fun getValue(): Int = propValue
-    fun setValue(value: Int) {
+//    fun getValue(): Int = propValue
+    operator fun getValue(employee: newEmployee, prop: KProperty<*>): Int = propValue
+//    fun setValue(value: Int) {
+    operator fun setValue(employee: newEmployee, prop: KProperty<*>, newValue: Int) {
         val oldValue = propValue
-        propValue = value
-        changeSupport.firePropertyChange(propName, oldValue, value)
+        propValue = newValue
+        changeSupport.firePropertyChange(propName, oldValue, newValue)
     }
 }
 

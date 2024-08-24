@@ -1,4 +1,4 @@
-package DestructingDeclaration
+package destructingDeclaration
 
 data class Email(val email: String)
 

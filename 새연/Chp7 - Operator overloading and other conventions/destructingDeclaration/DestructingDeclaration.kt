@@ -1,0 +1,4 @@
+package DestructingDeclaration
+
+class DestructingDeclaration {
+}
