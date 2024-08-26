@@ -1,4 +1,4 @@
-package DelegatedProperty
+package delegatedProperty
 
 import java.lang.reflect.Type
 
@@ -12,6 +12,7 @@ class Delegate {
     }
 }
 class Foo {
+//    var p: Type by Delegate()
     private val delegate = Delegate()
 
     val param1: Any? = null

@@ -1,4 +1,4 @@
-package DestructingDeclaration
+package destructingDeclaration
 
 data class NameComponents(val name: String, val extension: String)
 
@@ -11,6 +11,7 @@ fun destructingSplitFileName(fullName: String): NameComponents {
     val (name, extension) = fullName.split('.', limit = 2)
     return NameComponents(name, extension)
 }
+
 fun main() {
     val (name, extension) = splitFileName("example.kt")
     println(name)

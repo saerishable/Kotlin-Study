@@ -1,6 +1,7 @@
-package useSiteVariance
+package variance
 
-fun <T> copyData(src: MutableList<T>, dest: MutableList<T>) {
+import kotlin.collections.MutableList
+fun <T> copyData(src: MutableList <T>, dest: MutableList<T>) {
     for (item in src) {
         dest.add(item)
     }
@@ -18,7 +19,7 @@ fun <T> inCopyData(src: MutableList<T>, dest: MutableList<in T>) {
     }
 }
 
-fun <T : R, R> copyData(src: MutableList<T>, dest: MutableList<R>) {
+fun <T : R, R> twoCopyData(src: MutableList<T>, dest: MutableList<R>) {
     for (item in src) {
         dest.add(item)
     }
@@ -27,6 +28,6 @@ fun <T : R, R> copyData(src: MutableList<T>, dest: MutableList<R>) {
 fun main() {
     val numbers = mutableListOf(1, 2, 3)
     val any = mutableListOf<Any>()
-    copyData(numbers, any)
+    twoCopyData(numbers, any)
     println(any)
 }

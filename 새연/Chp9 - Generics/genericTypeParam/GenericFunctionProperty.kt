@@ -1,4 +1,4 @@
-import GenericClass.List
+package genericTypeParam
 
 val authors = listOf("Dmitry", "Svetlana")
 

@@ -1,5 +1,6 @@
-package DestructingDeclaration
+package destructingDeclaration
 
+import delegatedProperty.PropetyChangeAware
 import java.beans.PropertyChangeListener
 
 class Employee(val name: String, age: Int, salary: Int) : PropetyChangeAware() {
@@ -27,6 +28,6 @@ fun main() {
         }
     )
 
-    employee.age
-    employee.salary
+    employee.age = 23
+    employee.salary = 500
 }

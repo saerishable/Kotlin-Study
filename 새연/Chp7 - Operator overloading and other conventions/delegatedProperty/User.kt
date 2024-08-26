@@ -1,4 +1,4 @@
-package destructingDeclaration
+package delegatedProperty
 
 data class Email(val email: String)
 
@@ -13,9 +13,11 @@ class User(val name: String) {
         }
 
     val lazyEmails by lazy { loadEmails(this) }
-    private fun loadEmails(user: User): List<Email>? {
-        TODO()
-    }
+}
+
+fun loadEmails(user: User): List<Email>? {
+    println("${user.name}의 이메일")
+    return listOf()
 }
 
 fun main() {

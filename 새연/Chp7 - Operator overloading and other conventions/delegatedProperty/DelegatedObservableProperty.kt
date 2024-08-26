@@ -2,26 +2,25 @@ package delegatedProperty
 
 import kotlin.reflect.KProperty
 
-class ObservableProperty(val propName: String, var propValue: Int, val changeSupport: PropetyChangeSupport) {
-//    fun getValue(): Int = propValue
-    operator fun getValue(employee: newEmployee, prop: KProperty<*>): Int = propValue
-//    fun setValue(value: Int) {
-    operator fun setValue(employee: newEmployee, prop: KProperty<*>, newValue: Int) {
+class DelegatedObservableProperty(var propValue: Int, val changeSupport: PropetyChangeSupport) {
+    operator fun getValue(employee: DelegatedEmployee, prop: KProperty<*>): Int = propValue
+    operator fun setValue(employee: DelegatedEmployee, prop: KProperty<*>, newValue: Int) {
         val oldValue = propValue
         propValue = newValue
-        changeSupport.firePropertyChange(propName, oldValue, newValue)
+        changeSupport.firePropertyChange(prop.name, oldValue, newValue)
     }
+
 }
 
-class newEmployee(val name: String, age: Int, salary: Int) : PropetyChangeAware() {
-    val _age = ObservableProperty("age", age, changeSupport)
-    var age: Int
-        get() = _age.getValue()
-        set(value) { _age.setValue(value) }
+class DelegatedEmployee(val name: String, age: Int, salary: Int) : PropetyChangeAware() {
+    var age: Int by DelegatedObservableProperty(age, changeSupport)
+    var salary: Int by DelegatedObservableProperty(salary, changeSupport)
+}
 
-    val _salary = ObservableProperty("salary", salary, changeSupport)
-    var salary: Int
-        get() = _salary.getValue()
-        set(value) { _salary.setValue(value) }
+class LibraryEmployee(val name: String, age: Int, salary: Int) : PropetyChangeAware() {
+    private val observer = {
+        prop: KProperty<*>, oldValue: Int, newValue: Int ->
+        changeSupport.firePropertyChange(prop.name, oldValue, newValue)
+    }
 }
 

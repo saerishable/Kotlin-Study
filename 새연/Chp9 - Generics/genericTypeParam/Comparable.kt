@@ -1,4 +1,4 @@
-package genericTypeParam.genericClass
+package genericTypeParam
 
 import kotlin.String
 

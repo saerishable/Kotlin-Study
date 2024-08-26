@@ -1,4 +1,4 @@
-package DestructingDeclaration
+package destructingDeclaration
 
 fun printEntries(map: Map<String, String>) {
     for ((key, value) in map) {

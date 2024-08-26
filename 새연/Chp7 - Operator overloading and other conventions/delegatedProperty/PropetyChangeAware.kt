@@ -1,4 +1,4 @@
-package destructingDeclaration
+package delegatedProperty
 
 import java.beans.PropertyChangeListener
 
