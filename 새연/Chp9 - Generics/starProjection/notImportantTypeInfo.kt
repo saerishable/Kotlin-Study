@@ -1,0 +1,4 @@
+package starProjection
+
+class notImportantTypeInfo {
+}
